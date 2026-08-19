@@ -1185,9 +1185,13 @@ Completa tus datos y nos pondremos en contacto contigo.
 
 <form
 id="formularioContacto"
-action="#"
+action="https://formsubmit.co/edith.diaz@terrarealestate777.com"
 method="POST"
 >
+
+<!-- Configuración de envío a tu correo -->
+<input type="hidden" name="_subject" value="¡Nuevo interesado en la propiedad! - Terra Real Estate">
+<input type="hidden" name="_captcha" value="false">
 
 <div class="campo-formulario">
 
@@ -1469,22 +1473,6 @@ function cerrarFoto() {
 
     document.getElementById("fotoGrande").src = "";
 }
-
-
-/* =========================
-   FORMULARIO
-========================= */
-
-document.getElementById("formularioContacto").addEventListener("submit", function(event) {
-
-    event.preventDefault();
-
-    alert(
-        "Gracias por contactar con Terra Real Estate. " +
-        "Hemos recibido tus datos y nos pondremos en contacto contigo."
-    );
-
-});
 
 </script>
 
